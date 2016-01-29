@@ -1,0 +1,4 @@
+#!/bin/sh
+path=$(udevil mount $@ | cut -f4 -d' ')
+sudo mkdir $path-bindfs
+sudo bindfs -u $(id -u) -g $(id -g) $path $path-bindfs

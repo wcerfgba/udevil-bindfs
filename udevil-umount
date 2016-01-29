@@ -1,0 +1,5 @@
+#!/bin/sh
+path=$(findmnt -n -o TARGET $1)
+sudo fusermount -u $path-bindfs
+sudo rm -r $path-bindfs
+udevil umount $path
