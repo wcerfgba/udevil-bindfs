@@ -7,3 +7,5 @@ but this is untested.
 The two scripts can be used as drop-in replacements for `udevil mount` and 
 `udevil umount`, except where unmount options are required 
 (see `udevil --help`).
+
+Public domain as far as I care. :)
